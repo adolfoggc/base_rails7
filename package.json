@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@floating-ui/dom": "^1.7.4",
+    "air-datepicker": "^3.6.0",
+    "embla-carousel": "^8.6.0",
+    "embla-carousel-wheel-gestures": "^8.1.0",
+    "emoji-mart": "^5.6.0",
+    "motion": "^12.23.12",
+    "number-flow": "^0.5.8",
+    "photoswipe": "^5.4.4",
+    "tom-select": "^2.4.3"
+  }
+}

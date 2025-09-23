@@ -8,3 +8,4 @@ PostgreSql
 RSpec
 Sidekiq
 Devise
+Tailwind CSS

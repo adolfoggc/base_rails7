@@ -1,8 +1,6 @@
 <div class="min-h-screen bg-red-200">
   <% accordion_items = [
-    { section: "Painel", topics: [{name: 'Início', path: root_path}, {name: 'Pesquisar', path: search_path}] },
-    { section: "Cardápio", topics: [{name: 'Listar', path: products_path}, {name: 'Desabilitados', path: products_disabled_path}] },
-    { section: "Pedidos", topics: [{name: 'Abertos', path: orders_path}, {name: 'Fechados', path: paid_orders_path}] }
+    { section: "Painel", topics: [{name: 'Início', path: root_path}] }
   ] %>
 
   <div class="w-full"  data-controller="accordion">

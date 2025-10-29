@@ -1,19 +1,59 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BaseProject7</title>
+    <title>Brigadeire</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
+
+    <!-- Rails Blocks Section -->
+
+    <!-- Shoelace -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/components/color-picker/color-picker.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/dark.css"
+    />
+
+    <!-- Tom Select -->
+    <link href="https://cdn.jsdelivr.net/npm/tom-select@2.4.3/dist/css/tom-select.css" rel="stylesheet">
+
+    <!-- Air Datepicker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.6.0/air-datepicker.min.css">
+
+    <!-- PhotoSwipe -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe/dist/photoswipe.css">
+    <!-- END Rails Blocks Section -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <main class="container mx-auto mt-28 px-5 flex">
-      <%= yield %>
+    <main class="w-screen">
+      <%= render "shared/topbar" %>
+      <div class="grid grid-cols-6" >
+        <%= render "shared/sidebar" %>
+        
+        <!-- dashboard -->
+        <div class="col-span-5 bg-red-100">
+          <div class="bg-neutral-50 dark:bg-neutral-900/50 rounded-xl px-6 py-5 m-8 border border-black/10 dark:border-white/10 min-h-screen">
+            <%= yield %>
+          </div>
+          <div class="col-span-5 text-center bg-white p-2">
+            Copyright 2025 - Catita Soft
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>

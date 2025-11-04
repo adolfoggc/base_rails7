@@ -1,2 +1,4 @@
 pt-br:
   hello: "Olá mundo"
+  "yes": 'Sim'
+  "no": 'Não'
